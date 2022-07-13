@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-weight: 900;
+}
+
+body {
+  font-family: "Edu NSW ACT Foundation", cursive;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(../image/pexels-josh-hild-2448749.jpg) no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+.left {
+  flex-basis: 60%;
+  height: 100vh;
+  position: relative;
+}
+
+.left-title {
+  position: absolute;
+  top: 0.5em;
+  left: 1.1em;
+  font-size: 5em;
+}
+
+.left-content {
+  position: absolute;
+  bottom: 4em;
+  left: 2em;
+}
+
+.temp-num,
+.city-info,
+.weather {
+  display: inline-block;
+  padding-left: 30px;
+}
+
+.cloud {
+  font-size: 4em;
+  color: white;
+}
+
+.temp-num {
+  font-size: 6em;
+  font-weight: 500;
+}
+
+.city-info p {
+  font-size: 2em;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.weather p {
+  font-size: 3.5em;
+  color: black;
+}
+
+.right {
+  flex-basis: 40%;
+  height: 100vh;
+  background: linear-gradient(#cbd6eb, #00000069);
+  /* opacity: 0.5; */
+  /* filter: blur(1px); */
+}
+
+.right label {
+  color: black;
+  display: block;
+  font-size: 3em;
+  margin-bottom: 0.2em;
+  text-align: center;
+  margin-top: 1.2em;
+}
+
+.right label[for="search"] {
+  margin-top: 2.5em;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input {
+  margin-left: 5em;
+}
+
+.input input {
+  color: black;
+  border: none;
+  outline: none;
+  width: 80%;
+  height: 70px;
+  background: linear-gradient(#cbd6eb, #00000069);
+  border-radius: 25px;
+  padding-left: 1.5em;
+  font-size: 1.5em;
+}
+
+textarea {
+  margin-left: 2em;
+  margin-bottom: 1em;
+  width: 600px;
+  height: 300px;
+  background: linear-gradient(#cbd6eb, #00000069);
+  color: black;
+  border-radius: 10px;
+  font-size: 30px;
+  padding-left: 0.5em;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+button {
+  background: linear-gradient(#cbd6eb, #00000069);
+  color: black;
+  font-size: 3em;
+  margin-left: 4em;
+  transition: 0.4s ease-out;
+  border-radius: 10px;
+  border-style: none;
+}
+
+button:hover {
+  color: white;
+}
+
+.feeling {
+  font-size: 2em;
+  position: absolute;
+  left: 6rem;
+  bottom: 0.6em;
+  width: 100%;
+  height: max-content;
+}
