@@ -2,7 +2,7 @@
 const apiKey = "a711d582ff661e410852462789360fab&units=metric";
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth() + "/" + d.getDate() + "/" + d.getFullYear();
+let newDate = d.getMonth() + 1 + "/" + d.getDate() + "/" + d.getFullYear();
 
 const button = document.getElementById("generate");
 
